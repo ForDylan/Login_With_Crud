@@ -1,0 +1,30 @@
+<div class="table-container">
+  <table class="table-custom">
+    <tr>
+      <th class = "id">ID</th>
+      <th class = "title">Titulo</th>
+      <th class = "completed">Completado</th>
+      <th class = "actions"></th>
+    </tr>
+@for(task of task(); track task.id)
+{
+      <tr>
+      <td class="id">{{task.id}}</td>
+      <td class="title">{{task.title}}</td>
+      <td class="completed">{{task.completed ? 'Completado' : 'No Completado'}}</td>
+      <td class="actions">
+        <a [routerLink]="['/tasks/edit/' + task.id]">
+          <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-edit"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7h-1a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-1" /><path d="M20.385 6.585a2.1 2.1 0 0 0 -2.97 -2.97l-8.415 8.385v3h3l8.385 -8.415z" /><path d="M16 5l3 3" /></svg>
+        </a>
+      </td>
+    </tr>
+}
+@empty
+{
+    <tr> 
+      <td colspan="4" class="actions">No hay tareas</td>
+    </tr>
+
+}
+  </table>
+</div>

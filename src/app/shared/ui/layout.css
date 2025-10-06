@@ -1,0 +1,46 @@
+.mi-header 
+{
+  height: 80px;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+.mi-nav 
+{
+  display: flex;
+  align-items: center;       
+  justify-content: space-between; 
+  height: 100%;
+}
+
+.mi-logo 
+{
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  margin-left: 119px;
+}
+
+.mi-btn 
+{
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  width: 100px;
+  margin-right: 112px;
+}
+
+.mi-btn:hover 
+{
+    background: #2563eb;
+}

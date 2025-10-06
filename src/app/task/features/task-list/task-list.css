@@ -1,0 +1,25 @@
+.mi-btn 
+{
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  width: 120px;
+  margin-top: -250px;
+  margin-left: 185px;
+}
+
+.mi-btn:hover 
+{
+  background: #2563eb;
+}
+
+p
+{
+  color: aliceblue;
+  text-align: center;
+  font-size: 1.2rem;
+}

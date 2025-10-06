@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Curriculo_Fire": {
+    "curriculo-fire": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -56,10 +56,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Curriculo_Fire:build:production"
+              "buildTarget": "curriculo-fire:build:production"
             },
             "development": {
-              "buildTarget": "Curriculo_Fire:build:development"
+              "buildTarget": "curriculo-fire:build:development"
             }
           },
           "defaultConfiguration": "development"

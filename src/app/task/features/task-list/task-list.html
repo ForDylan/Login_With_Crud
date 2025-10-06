@@ -1,0 +1,12 @@
+<section class="section">
+    <button class="mi-btn" routerLink="/tasks/new">Nueva Tarea</button>
+
+    @if(tasksService.loading())
+    {
+        <p>Cargando...</p>
+    }
+    @else 
+    {
+          <app-table [task]="tasksService.getTasks()"></app-table>
+    }
+</section>

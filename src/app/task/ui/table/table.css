@@ -1,0 +1,104 @@
+
+.table-container {
+  background: #181e29;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(116, 113, 113, 0.15);
+  padding: 2rem 2.5rem 2rem 2.5rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.table-title {
+  color: #bfc7e0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+
+.table-custom {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  color: #bfc7e0;
+  background: transparent;
+  margin-top: 0;
+}
+
+.table-custom thead {
+  background: #23283a;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+}
+
+.table-custom th, .table-custom td {
+  padding: 0.85rem 1.2rem;
+  border-bottom: 1px solid #23283a;
+  text-align: left;
+}
+
+.table-custom th {
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.table-custom tbody tr {
+  background: #484a4e;
+  transition: background 0.2s;
+}
+
+.table-custom tbody tr:hover {
+  background: #23283a;
+}
+
+.table-custom td {
+  color: #bfc7e0;
+}
+
+.table-custom .actions a {
+  color: #e4e6eb; /* color blanco suave del ícono */
+  background: transparent;
+  border: none;
+  padding: 0.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: none;
+  transition: background 0.2s, transform 0.1s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+
+.table-custom .actions a:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.table-custom .actions a:active {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(0.97); /* leve efecto de presión */
+}
+
+.table-custom .actions a svg {
+  stroke: #e4e6eb;
+  transition: stroke 0.2s;
+}
+
+.table-custom .actions a:hover svg,
+.table-custom .actions a:active svg {
+  stroke: #ffffff;
+}

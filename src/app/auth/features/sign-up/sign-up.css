@@ -1,0 +1,135 @@
+.signup-bg
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: #181e29;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 0;
+}
+
+.signup-container 
+{
+	background: #23283a;
+	border-radius: 10px;
+	box-shadow: 0 2px 16px rgba(0,0,0,0.15);
+	padding: 32px 32px 24px 32px;
+	max-width: 400px;
+	width: 100%;
+	margin: auto;
+	border: none;
+}
+
+.signup-title 
+{
+	color: #fff;
+	font-size: 1.6rem;
+	font-weight: bold;
+	margin-bottom: 24px;
+	text-align: left;
+}
+
+.signup-form 
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.signup-label 
+{
+	color: #fff;
+	font-size: 1rem;
+	margin-bottom: 6px;
+	margin-top: 16px;
+}
+
+.signup-input 
+{
+	background: #23283a;
+	border: 1px solid #2c3146;
+	color: #fff;
+	border-radius: 8px;
+	padding: 12px;
+	font-size: 1rem;
+	margin-bottom: 12px;
+}
+
+.signup-input::placeholder 
+{
+	color: #7a819a;
+}
+
+.signup-row
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 18px;
+}
+
+.signup-remember 
+{
+	color: #7a819a;
+	font-size: 0.95rem;
+	display: flex;
+	align-items: center;
+}
+.signup-remember input[type="checkbox"] 
+{
+	margin-right: 6px;
+}
+
+.signup-link 
+{
+	color: #3b82f6;
+	text-decoration: none;
+	font-size: 0.95rem;
+}
+
+.signup-link:hover 
+{
+	text-decoration: underline;
+}
+
+.signup-btn 
+{
+	width: 100%;
+	background: #3b82f6;
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	padding: 12px 0;
+	font-size: 1rem;
+	font-weight: 500;
+	margin-bottom: 12px;
+	margin-top: 5PX;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+.signup-btn:hover 
+{
+	background: #2563eb;
+}
+
+.signup-footer 
+{
+	color: #7a819a;
+	font-size: 0.95rem;
+	text-align: left;
+}
+.correo
+{
+	color: #ec6868;
+}
+.pass 
+{
+	color: #ec6868;
+}
+.signup-title
+{
+	text-align: center;
+}

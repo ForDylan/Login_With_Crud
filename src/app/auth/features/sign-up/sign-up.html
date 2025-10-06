@@ -1,0 +1,32 @@
+<section class="signup-bg">
+  <div class="signup-container">
+    <h1 class="signup-title">Crea Una Cuenta</h1>
+    <app-google-button (onClick)="submitWithGoogle()"></app-google-button>
+    <form class="signup-form" [formGroup]="form" (ngSubmit)="sumbit()">
+      <label for="email" class="signup-label">Email</label>
+      <input type="email" id="email" class="signup-input" placeholder="name@company.com" formControlName="email"/>
+      @if(isRequierd('email'))
+      {
+        <small class="correo">Este Campo  Es Obligatorio</small>
+      }
+      
+      @if(isEmail())
+      {
+        <small class="correo">El correo no es valido</small>
+      }
+
+      <label for="password" class="signup-label">Contraseña</label>
+      <input type="password" id="password" class="signup-input" placeholder="••••••••" formControlName="password"/>
+
+      @if(isRequierd('password'))
+      {
+        <small class="pass">Este Campo  Es Obligatorio</small>
+      }
+
+      <button type="submit" class="signup-btn">Crear</button>
+      <p class="signup-footer">¿Ya Tienes una cuenta?
+      <a routerLink="/auth/Sign-in" class="signup-link">Inicia Sesión</a></p>
+    
+    </form>
+  </div>
+</section> 

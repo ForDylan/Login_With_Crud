@@ -1,0 +1,16 @@
+ <form class="signup-form" [formGroup]="form" (ngSubmit)="sumbit()">
+      <label for="title" class="signup-label">Titulo</label>
+      <input type="text" name="title" id="title" class="signup-input" formControlName="title"/>
+
+      <div class="toggle-container">
+        <label class="toggle-label">
+          <input formControlName="completed" type="checkbox" class="toggle-input">
+          <span class="toggle-slider"></span>
+          <span class="toggle-text">Completado</span>
+        </label>
+      </div>
+
+      <button [disabled]="loading()" type="submit" class="signup-btn">
+        {{loading() ? 'Cargando...' : 'Crear Tarea'}}
+      </button>
+      </form>
