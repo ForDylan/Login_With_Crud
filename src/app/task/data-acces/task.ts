@@ -17,10 +17,7 @@ export type TaskCreate = Omit<Task, 'id'>;
 
 const PATH = 'tasks';
 
-@Injectable({
-  providedIn: 'root'
-})
-
+@Injectable()
 export class TaskService 
 {
   private _firestore = inject(Firestore);

@@ -6,6 +6,7 @@ import { TaskService } from '../../data-acces/task';
 
 @Component({
   selector: 'app-task-list',
+  standalone: true,
   imports: [Table,RouterLink],
   templateUrl: './task-list.html',
   styleUrls: ['task-list.css'],

@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-task-form',
+  standalone: true,
   imports: [ReactiveFormsModule],
   templateUrl: './task-form.html',
   styleUrl: './task-form.css',

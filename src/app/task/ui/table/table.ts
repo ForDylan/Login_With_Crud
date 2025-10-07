@@ -5,6 +5,7 @@ import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-table',
+  standalone: true,
   imports: [RouterLink],
   templateUrl: './table.html',
   styleUrls: ['./table.css']
